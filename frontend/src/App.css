@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #2a2d34, #1a1c22);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #61dafb;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: #61dafb;
+  border: none;
+  color: black;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.4);
+  margin-top: 20px;
+  
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(97, 218, 251, 0.6);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 20px;
+}
+
+.grid-item {
+  background-color: #20232a;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+input.inp {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  width: 80%;
+  transition: border-color 0.3s ease;
+}
+
+input.inp:focus {
+  border-color: #21a1f1;
+  outline: none;
+}
+
+input.inp::placeholder {
+  color: #bbb;
+}
+
+.btn2 {
+  background-color: #61dafb;
+  border: none;
+  color: black;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(97, 218, 251, 0.4);
+  width: 50%;
+}
+
+.btn2:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(97, 218, 251, 0.6);
+}
+
+.address {
+  font-weight: bold;
+  color: #61dafb;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #bbb;
+}

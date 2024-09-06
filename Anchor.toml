@@ -1,0 +1,18 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+storage_project = "HKJNVFBAz9sTejCWaiGyttQvVBHGDr3KTbyLWcNEjiez"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/rishabhjaiswal/.config/solana/id.json"
+
+[scripts]
+test = "node tests/storage_project.js"
